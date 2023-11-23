@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Times New Roman', Times, serif;
+}
+.con{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style:none ;
+}
+a{
+    text-decoration: none;
+}
+@media (min-width:768px){
+    .con{
+        width: 750px;
+    }
+
+}
+   @media (min-width:997px){
+    .con{
+        width: 970px;
+    }}
+    @media (min-width:1200px){
+        .con{
+            width: 1176px;
+        }}
+        header{
+        position: absolute;
+        
+        }
+        header nav{
+            display: flex;
+            
+            justify-content: flex-end;
+        }
+        @media (max-width:768px){
+            header nav img:hover+ul{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top:50px;
+                    background-color: cornsilk;
+                    width: fit-content;
+                    left: 300px;
+               
+            }
+        header nav img {
+
+            position: absolute;
+            left: 300px;
+
+        }
+        
+        }
+       header nav img:hover+ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:50px;
+            background-color: cornsilk;
+            width: fit-content;
+        
+    }
+        header nav ul {
+            display: none;
+            
+        }
+        header nav ul li {
+            padding: 20px;
+
+            
+        }
+        header nav ul li{
+            border-bottom: 1px blue solid;
+        }
+        .start{
+             background-image: url(pexels-ricky-esquivel-1580173.jpg);
+              background-position: center;
+              background-size: cover;
+              height: 100vh;
+            
+              
+        }
+       .start .yes{
+            position: absolute;
+            left: 50%;
+           bottom:50%;
+           height: fit-content;
+            background-color: rgb(193, 193, 248);
+            width: 210px;
+}
+.start .yes h1 {
+    margin-bottom:50px ;
+    font-size: 50px;
+    color: rgb(117, 117, 232);
+    
+}
+.start .yes p{
+    font-size: 30px;
+    margin-top:30px ;
+    color: rgb(117, 117, 232);
+}
+.zara{
+    position: relative;
+    padding: 30px;
+}
+.zara .con h1 {
+    text-align: center;
+    color: rgb(221, 221, 255);
+    font-size: 50px;
+ margin-bottom: 50px;
+
+}
+.zara .con p{
+    text-align: center;
+  position: absolute;
+left: 35%;
+top:70px ;
+  font-size: 30px;
+   margin-bottom:50px ;
+} 
+@media (max-width:768px){
+    .zara .con p{
+       position: absolute;
+       left: 30px;
+       top:60px;
+    }}
+    @media (min-width:768px){
+        .zara .text{
+            display: grid;
+            grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+            text-align: center;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+        }}
+        .zara .text .g h1 {
+            margin-bottom: 50px;
+            text-align: center;
+            border: 2px solid blue;
+        }
+        .zara .text .g p {
+            margin-bottom: 50px;
+            text-align: center;
+            border: solid blue 1px;
+            font-size:30px;
+        }
+        .zara .text .g span{
+            margin-bottom: 30px;
+            display: block;
+            font-size: 60px;
+            text-align: center;
+        }
+        .zara .text .g span::before{
+            content: "$";
+            font-size: 30px;
+        }
+        footer .text {
+            display: flex; 
+            padding: 20px;
+            justify-content: center;
+        }
+        footer .text p{
+            padding-right: 50px;
+            margin-left: 50px ; 
+            
+        }
+        footer{
+            padding: 50px;
+            background-color: red;
+        }
+        @media (max-width:768px){
+            footer .text h1{
+        padding-left: 30px;
+            }}
